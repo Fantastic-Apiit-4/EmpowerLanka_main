@@ -3,6 +3,8 @@ let wave1 = document.getElementById("wave1");
 let wave2 = document.getElementById("wave2");
 let wave3 = document.getElementById("wave3");
 let wave4 = document.getElementById("wave4");
+let hamburger = document.getElementById("ham");
+let header = document.getElementById("cont");
 
 window.addEventListener("scroll",function(){
     let val = window.scrollY;
@@ -29,3 +31,9 @@ function reveal(){
         }
     }
 }
+
+
+hamburger.addEventListener("click",function(){
+    hamburger.classList.toggle("on");
+    header.classList.toggle("extended");
+})
